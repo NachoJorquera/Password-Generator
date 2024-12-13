@@ -9,7 +9,7 @@ body {
 #container {
   background-color: #1F2937;
   color:white;
-  padding: 80px 50px;
+  padding: 80px 50px 40px;
   width: 600px;
   margin: 0 auto;
 }
@@ -18,12 +18,16 @@ body {
   margin: 40px 0;
 }
 
-#pwdOne,
-#pwdTwo {
+#pwd-one,
+#pwd-two {
   color: #55F991;
+  margin: 0;
+  background-color: #273549;
+  border: none;
+  font-size: 16px;
 }
 
-.pwdBox {
+.pwd-box {
   width: 250px;
   height: 40px;
   background-color: #273549;
@@ -65,7 +69,7 @@ body {
 
 #intro {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 60px;
   margin-top: 15px;
 }
@@ -82,7 +86,7 @@ form {
   margin: 30px 0;
 }
 
-#pwdLength {
+#pwd-length {
   font-size: 18px;
   width: 50px;
   text-align: center;
@@ -118,4 +122,12 @@ form {
 
 .btns:active {
   background-color: #1e8865;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-weight: 300;
+  color: #c2c2c2b0;
 }
