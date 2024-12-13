@@ -8,13 +8,13 @@ body {
 
 #container {
   background-color: #1F2937;
-  color:white;
+  color: #FFFFFF;
   padding: 80px 50px 40px;
   width: 600px;
   margin: 0 auto;
 }
 #divider {
-  border-bottom: 2px solid #273549;
+  border-bottom: 1px solid #273549;
   margin: 40px 0;
 }
 
@@ -64,7 +64,7 @@ body {
   font-weight: 800;
   font-size: 40px;
   margin: 0;
-  color: #4ADF86;
+  color: #10B981;
 }
 
 #intro {
@@ -90,7 +90,7 @@ form {
   font-size: 18px;
   width: 50px;
   text-align: center;
-  border: 1px solid #4ADF86;
+  border: 1px solid #10B981;
   border-radius: 6px;
   background-color: #273549;
   color: #FFFFFF;

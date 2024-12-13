@@ -8,6 +8,7 @@ let numBtn = document.getElementById("num-btn")
 let symBtn = document.getElementById("sym-btn")
 let pwdOne = document.getElementById("pwd-one")
 let pwdTwo = document.getElementById("pwd-two")
+let modeBtn = document.getElementById("mode-btn")
 let withNumbers = true
 let withSymbols = true
 
@@ -34,11 +35,17 @@ function generatePassword() {
     }
   } else {
     passwordLength = Number(inputBox.value)
-    for (let i = 0; i < passwordLength; i++) {
-      let randomIndexOne = Math.floor(Math.random() * characters.length)
-      let randomIndexTwo = Math.floor(Math.random() * characters.length)
-      passwordOne += characters[randomIndexOne]
-      passwordTwo += characters[randomIndexTwo]
+    if (passwordLength < 4) {
+      alert("Password must be at least 4 characters")
+    } else if (passwordLength >= 26) {
+      alert("Password must be 25 characters tops")
+    } else {
+      for (let i = 0; i < passwordLength; i++) {
+        let randomIndexOne = Math.floor(Math.random() * characters.length)
+        let randomIndexTwo = Math.floor(Math.random() * characters.length)
+        passwordOne += characters[randomIndexOne]
+        passwordTwo += characters[randomIndexTwo]
+      }
     }
   }
   pwdOne.textContent = passwordOne
@@ -75,4 +82,21 @@ function copyPasswordOne() {
 function copyPasswordTwo() {
   navigator.clipboard.writeText(pwdTwo.textContent)
   alert("Password: " + pwdTwo.textContent + " copyed to clipboard")
+}
+
+function modeSelector() {
+  if (modeBtn.textContent === "Mode ☀️") {
+    modeBtn.textContent = "Mode 🌙"
+    document.getElementById("container").style.color = "#273549"
+    document.getElementById("container").style.backgroundColor = "#ECFDF5"
+    document.getElementById("divider").style.border = "1px solid #D5D4D8"
+    document.getElementById("footer").style.color = "#6B7280"
+  } else {
+    modeBtn.textContent = "Mode ☀️"
+    document.getElementById("container").style.color = "#FFFFFF"
+    document.getElementById("container").style.backgroundColor = "#1F2937"
+    document.getElementById("divider").style.border = "1px solid #273549"
+    document.getElementById("footer").style.color = "#c2c2c2b0"
+  }
+  
 }
