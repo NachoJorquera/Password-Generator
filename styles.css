@@ -38,7 +38,7 @@ body {
   justify-content: space-around;
 }
 
-button {
+#pwd-btn {
   background-color: #10B981;
   color: #FFFFFF;
   padding: 10px 20px;
@@ -70,8 +70,12 @@ button {
   margin-top: 15px;
 }
 
-button:hover {
+#pwd-btn:hover {
   background-color: #1e8865;
+}
+
+#pwd-btn:active {
+  background-color: #273549;
 }
 
 form {
@@ -89,3 +93,29 @@ form {
   margin-left: 3px;
 }
 
+#customs {
+  display: flex;
+  justify-content: start;
+}
+
+#customs form {
+  margin-right: 40px;
+}
+
+.btns {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  margin: 0 20px 30px 0;
+  background-color: #273549;
+  color: #FFFFFF;
+}
+
+.btns:hover {
+  background-color:#10B981;
+}
+
+.btns:active {
+  background-color: #1e8865;
+}

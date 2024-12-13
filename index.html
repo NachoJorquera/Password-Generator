@@ -14,13 +14,15 @@
     <h1 id="heading">Generate a</h1>
     <h1 id="sub-heading">random password</h1>
     <p id="intro">Never use an insecure password again.</p>
-    <div>
-      <form>
-        <label for="pwdLength">Enter custom length:</label>
-        <input type="number" id="pwdLength" name="pwdLength" min="4" max="25">
-      </form>
+    <form>
+      <label for="pwdLength">Enter custom length:</label>
+      <input type="number" id="pwdLength" name="pwdLength" min="4" max="25">
+    </form>
+    <div id="customs">
+      <button class="btns" id="num-btn" onclick="numbersSelector()">Numbers ✅</button>
+      <button class="btns" id="sym-btn" onclick="symbolsSelector()">Symbols ✅</button>
     </div>
-    <button onclick="generatePassword()">Generate passwords</button>
+    <button id="pwd-btn" onclick="generatePassword()">Generate passwords</button>
     <p id="divider"></p>
     <div id="pwds">
       <div class="pwdBox"><p id="pwdOne"></p></div>
