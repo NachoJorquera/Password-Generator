@@ -74,12 +74,12 @@ function symbolsSelector() {
 
 function copyPasswordOne() {
   navigator.clipboard.writeText(pwdOne.textContent)
-  alert("Password: " + pwdOne.textContent + " copyed to clipboard")
+  alert("Password: " + pwdOne.textContent + " copied to clipboard")
 }
 
 function copyPasswordTwo() {
   navigator.clipboard.writeText(pwdTwo.textContent)
-  alert("Password: " + pwdTwo.textContent + " copyed to clipboard")
+  alert("Password: " + pwdTwo.textContent + " copied to clipboard")
 }
 
 function modeSelector() {
