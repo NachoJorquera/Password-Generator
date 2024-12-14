@@ -37,8 +37,6 @@ function generatePassword() {
     passwordLength = Number(inputBox.value)
     if (passwordLength < 4) {
       alert("Password must be at least 4 characters")
-    } else if (passwordLength >= 26) {
-      alert("Password must be 25 characters tops")
     } else {
       for (let i = 0; i < passwordLength; i++) {
         let randomIndexOne = Math.floor(Math.random() * characters.length)

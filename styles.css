@@ -21,20 +21,22 @@ body {
 #pwd-one,
 #pwd-two {
   color: #55F991;
-  margin: 0;
   background-color: #273549;
   border: none;
   font-size: 16px;
+  word-wrap: break-word;
+  min-height: 20px;
+  max-width: 220px;
 }
 
 .pwd-box {
-  width: 250px;
-  height: 40px;
   background-color: #273549;
   border-radius: 6px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 230px;
 }
 
 #pwds {
