@@ -91,12 +91,17 @@ function modeSelector() {
     document.getElementById("container").style.backgroundColor = "#ECFDF5"
     document.getElementById("divider").style.border = "1px solid #D5D4D8"
     document.getElementById("footer").style.color = "#6B7280"
+    document.getElementById("mode-btn").style.backgroundColor = "#c2c2c2b0"
+    document.getElementById("mode-btn").style.color = "#273549"
+
   } else {
     modeBtn.textContent = "Mode ☀️"
     document.getElementById("container").style.color = "#FFFFFF"
     document.getElementById("container").style.backgroundColor = "#1F2937"
     document.getElementById("divider").style.border = "1px solid #273549"
     document.getElementById("footer").style.color = "#c2c2c2b0"
+    document.getElementById("mode-btn").style.backgroundColor = "#273549"
+    document.getElementById("mode-btn").style.color = "#c2c2c2b0"
   }
   
 }
